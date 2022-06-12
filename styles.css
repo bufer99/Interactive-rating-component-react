@@ -1,0 +1,132 @@
+@import url('https://fonts.google.com/specimen/Overpass');
+
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+html, body{
+    margin: 0;
+    height: 100vh;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    color: var(--light-grey);
+}
+
+.block{
+    background: var(--dark-blue);
+    background: linear-gradient(180deg, 
+    hsl(213, 19%, 18%) 0%,hsl(213, 19%, 10%) 60%);
+    width: 300px;
+    padding: 25px;
+    height: fit-content;
+    border-radius: 25px;
+}
+
+.wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--very-dark-blue);
+}
+
+.form > p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.form > div:nth-of-type(2){
+    color: var(--white);
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.circle{
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.active{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.hover{
+    background-color: var(--light-grey);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.rating{
+    display: flex;
+    gap: 20px;
+}
+
+button, button::after{
+    border: 0;
+    background-color: var(--orange);
+    border-radius: 50px;
+    width: 100%;
+    height: 45px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.finish{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 25px;
+}
+
+.selected{
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: var(--orange);
+    background-color: var(--dark-blue);
+    font-size: 13px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text:not(span:first-of-type){
+    line-height: 25px;
+}
+
+.text > span:first-of-type{
+    font-weight: 700;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.text > span:nth-of-type(2){
+    font-size: 13px;
+    width: 290px;
+}
