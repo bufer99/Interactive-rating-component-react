@@ -1,2 +1,2 @@
- https://bufer99.github.io/Interactive-rating-component-react/
+ https://bufer99.github.io/interactive-rating-component-react/
 
